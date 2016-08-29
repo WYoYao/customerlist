@@ -1,0 +1,112 @@
+html,body{font-size:12px; background-color:#fff; font-family:"Helvetica Neue",Helvetica,Microsoft YaHei; color: #333; min-width: 320px; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-font-smoothing: antialiased; -moz-user-select: none; }
+body, button, input, select, textarea,h1,h2,h3{font:400 14px/1.5 "Helvetica Neue",Helvetica,Microsoft YaHei;}
+input::-webkit-input-placeholder { /* WebKit browsers */ color: #b6b6b6;font-family:Helvetica;}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #b6b6b6;font-family:Helvetica;}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #b6b6b6;font-family:Helvetica;}
+input:-ms-input-placeholder { color: #b6b6b6; font-family:Helvetica;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; line-height: 1; }
+body, button, input, select, textarea { margin: 0; padding: 0; line-height: 1;}
+body:active { border:0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, iframe { display: block; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal;}
+address, cite, dfn, em, var, i { font-style: normal; font-weight: 400; }
+dfn { font-family: Microsoft YaHei;font-style:normal;font-size:12px; }
+ul, ol { list-style: none; }
+a { color: #333; text-decoration: none;}
+fieldset{ border: 0; font-size: 12px; color: #333333;}
+img {border: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; /*解决缩放失真*/ }
+table { border-collapse: collapse; border-spacing: 0;}
+input[type=text] { -webkit-appearance: none; border-radius: 0; background:transparent;padding:0 5px;-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+input{ border: 1px solid #DEDEDE; font-size: 12px; color: #333333;}
+:focus { outline: 0; }
+
+h1 { font: 100 1.286em/2 Tahoma; }
+h2 { font: 100 1.143em/2 Tahoma; }
+h3 { font: 100 1em/1.5 Tahoma; }
+::-moz-selection { background: #665f55; text-shadow: none; color: #fff; }
+::selection { background: #665f55; text-shadow: none; color: #fff; }
+::webkit-selection{ background: #665f55; text-shadow: none; color: #fff;}
+/*清空input*/
+.wrapClear{position:relative;}
+dfn.clearBtn{width:16px;height:16px;background-color:#ccc; border-radius:50%;margin:-9px 0 0 -9px;position:absolute;right:4px;top:50%;}
+dfn.clearBtn:before{border-left:1px solid #fff;height:8px;width:0px;position:absolute;content:""; left:7px;top:4px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+dfn.clearBtn:after{border-left:1px solid #fff;height:8px;width:0px;position:absolute;content:""; left:7px;top:4px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+
+/*苹果手机自带样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+    -webkit-appearance: none;
+
+}
+
+textarea {  -webkit-appearance: none;}
+
+/* 用户列表的公共内容 */
+#customerPlugin{
+    z-index:998;}
+#customerPlugin .header{position: fixed;height: 44px;width: 100%;top: 0;left: 0;background-color: #0FA4F0;z-index: 999;}
+#customerPlugin .header_left{position: absolute;height: 44px;width: 44px;top: 0;left: 0;}
+#customerPlugin .header_left:before{position: absolute;width: 10px;height: 10px;
+    top:50%;margin-top: -5px;left: 20px;border-top: 2px solid #FFFFFF;border-left: 2px solid #FFFFFF;
+    content: "  ";transform: rotate(-45deg);}
+#customerPlugin .header > h2{position: absolute;top:0;left: 0;width: 100%;text-align:center;line-height: 44px;font-size: 18px;
+    color: #FFFFFF; }
+#customerPlugin .header_right{position: absolute;height: 44px;width: 44px;top: 0;right: 0;background:url(./img/icon_contacts.png) no-repeat center center;background-size: 22px 18px;}
+
+/* 用户列表也的页面 */
+/*#customerList {}*/
+#customerList {z-index: 999;}
+#customerList .search{ position: fixed;top:44px;left: 0;width: 100%;height: 44px;background-color: #D2EAF6; display: block;z-index: 999;}
+#customerList p{padding: 0 8px;display: block;height: 46px;}
+#customerList p input{text-align: center;background-color: #FFFFFF;width: 100%;margin: 8px 0;height: 30px;line-height: 30px;border-radius: 5px;font-size:14px;}
+#customerList p input::-webkit-input-placeholder{font-size: 12px;color: #999;border:0;}
+#customerList .search p:before{position:absolute;border: 1px solid #BFBFBF;width: 7px;height: 7px;border-radius: 7px;
+    content: ' ';left:50%;top:17px;margin-left: -56px;}
+#customerList .search p:after{position: absolute;border-top: 1px solid #BFBFBF;width: 7px;height: 0;
+    content: '  ';left:50%;top:27px;margin-left: -50px;transform: rotate(45deg);}
+#customerList .content{position: absolute;border: 0;margin-top: 88px;width: 100%}
+
+#customerList #slider-content > ul >li > a{display: block;padding: 0 0 0 18px;margin:0 18px 0 0;height: 30px;line-height: 30px;color: #009FF0;background-color: #D9F1FD;}
+#customerList #slider-content > ul >li > ul {display: block;background-color: #fff;margin: 0 18px 0 0;}
+#customerList #slider-content > ul >li > ul > li {display: block;border-top: 1px solid #E5E5E5;height: 50px;position:relative;}
+#customerList #slider-content > ul >li > ul > li > .jianpin_left{position: relative;display: block;height: 20px;width:20px;border-radius: 50%;border:1px solid #E5E5E5;left:20px;top:15px;}
+#customerList #slider-content > ul >li > ul > li > a{position: absolute;display: block;height: 50px;padding-left: 60px;}
+#customerList #slider-content > ul >li > ul > li > .edit{position: absolute;display: block;height: 50px;width: 60px;
+    top:0;;right: 0;background: url(./img/icon_xie.fw.png) center center no-repeat;background-size: 16px 16px;}
+#customerList #slider-content .slider-nav{position: fixed;top:180px;right: 0px;width: 20px;height: 100%;background-color: #FFFFFF;}
+#customerList #slider-content .slider-nav li{color: #039FF0;text-align: center;line-height: 12px;font-size: 10px;font-weight: bold;}
+#customerList #slider-content .fixedTop{display: block;height: 30px;line-height: 30px;background-color: #D9F1FD;width: 100%;padding-left: 20px;color: #009FF0;}
+
+/* 用户编辑页 */
+#customerEdit {}
+
+/* 用户新增页面 */
+#customerInsert {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
